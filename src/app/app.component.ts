@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PropertyBindingType } from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
@@ -6,4 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  username: string = "test";
+
+  getUsername() {
+    return this.username;
+  }
 }
