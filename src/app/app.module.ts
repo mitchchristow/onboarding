@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
+import { HintDirective } from './hint.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TooltipComponent,
+    HintDirective,
   ],
   imports: [
     BrowserModule,
