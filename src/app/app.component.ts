@@ -8,7 +8,7 @@ import { PropertyBindingType } from '@angular/compiler';
 })
 
 export class AppComponent {
-  username: string = "test";
+  username: string = "username";
 
   getUsername() {
     return this.username;

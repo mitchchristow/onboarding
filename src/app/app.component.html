@@ -1,18 +1,15 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<h3 hint>This is an onboarding app!</h3>
+<!--TODO: Make this component a library-->
+<h3 tooltip step="1" text="Hi!">Welcome to my app!</h3>
 
-<label>Assignment</label>
-
+<!--Dummy elements below to test tooltips on various elements-->
 <input 
   type="text" 
   class="form-control"
   [(ngModel)]="username">
-  <h3> {{ username }} </h3>
-
-  <p id="floater"><p>
+  <h3> Welcome {{ username }}! </h3>
 
 <button class="btn btn-primary"
   (click)="username = ''" 
   [disabled]="username === ''">
-  Add Something </button>
+  Sign up! </button>
 
