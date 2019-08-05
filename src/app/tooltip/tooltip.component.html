@@ -1,0 +1,10 @@
+<div class="tooltip-container"
+[hidden]="dismissed"
+[style.left.px]="tooltipX"
+[style.top.px]="tooltipY"
+[style.height.px]="tooltipHeight">
+  <p class="tooltip-header"> Header for tooltip </p>
+  <p class="tooltip-body"> Text for tooltip </p>
+  <button class="tooltip-close" (click)="dismissed = true"> Close </button>
+</div>
+<ng-content></ng-content>

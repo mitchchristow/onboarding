@@ -1,0 +1,40 @@
+
+  .tooltip-container {
+      padding: 2px 16px;
+      opacity:0.85; 
+      z-index:5; 
+      background-color: #fefefe;
+      border: 1px solid #888;
+      position:absolute;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      animation-name: animateSide;
+      animation-duration: 0.6s;
+      overflow: auto;
+      font-size: 28px;
+    }
+
+  .tooltip-header {
+      }
+  
+  /* Modal Content */
+  .tooltip-body {
+  }
+  
+  /* The Close Button */
+  .tooltip-close {
+    color: #aaa;
+    float: right;
+    font-weight: bold;
+  }
+  
+  .tooltip-close:hover,
+  .tooltip-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Add Animation */
+  @keyframes animateSide {
+    from {left: -300px; opacity: 0}
+    to {left: 0; opacity: 1}
+  }
