@@ -5,6 +5,7 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class TourService {
+  stepsShown: number = 0;
 
   // Observable sources
   private componentMethodCallSource = new Subject<any>();
@@ -16,8 +17,6 @@ export class TourService {
     this.stepsShown = this.stepsShown + 1;
     this.componentMethodCallSource.next();
   }
-
-  stepsShown: number = 0;
 
   constructor() { }
 }
