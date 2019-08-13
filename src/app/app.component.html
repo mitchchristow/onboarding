@@ -1,6 +1,6 @@
 <!--TODO: Make this component a library-->
-<div tooltip>
-  <h3>1 Welcome to my app! </h3>
+<!-- <div tooltip step="1">
+  <h1> Welcome to this simple onboarding library! </h3>
   <h1>2 Hi!</h1>
 </div>
 <br>
@@ -16,16 +16,47 @@
 <br>
 <br>
 <br>
-<!--Dummy elements below to test tooltips on various elements-->
-<input 
-  type="text" 
-  class="form-control"
-  [(ngModel)]="3 + username">
-  <h2 tooltip step="1" text="Hi!">  4 Welcome {{ username }}! </h2>
-<button class="btn btn-primary"
-  (click)="username = ''" 
-  [disabled]="username === ''">
-  Sign up! </button>
+-->
   
 
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Simple Onboarding App</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1 tooltip step="1"> Welcome to Simple Onboarding App</h1> 
+  <p> To get started, modify this index.html file as you need, calling the component app-root somewhere in the body.</p> 
+  <p> Then simply use the attribute tooltip with attributes step and text in any element to pop up a tooltip for that element. </p>
+
+  <div tooltip step="1">
+    <p> For example, this tooltip is the result of adding tooltip step="1" to this element. </p>
+  </div>
+  <br>
+
+  <p> If you don't provide a step number, all your tooltips will appear all at once, instead of a click-through tour.</p>
+  <div tooltip step="1">
+    <p> This is an example form. This tooltip is the result of adding tooltip step="2" to the div element containing this form.</p>
+    <input 
+    type="text" 
+    class="form-control"
+    [(ngModel)]="Dummy">
+  </div>
+
+  <h2>  Have fun! </h2>
+</body>
+</html>

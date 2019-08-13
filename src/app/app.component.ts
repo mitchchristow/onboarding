@@ -7,10 +7,4 @@ import { PropertyBindingType } from '@angular/compiler';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-  username: string = "username";
-
-  getUsername() {
-    return this.username;
-  }
-}
+export class AppComponent {}

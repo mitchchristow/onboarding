@@ -1,10 +1,14 @@
-<div class="tooltip-container"
+<ng-content></ng-content> 
+<div #tooltipContainer class="tooltip-container"
 [hidden]="dismissed"
 [style.left.px]="tooltipX"
 [style.top.px]="tooltipY"
 [style.height.px]="tooltipHeight">
   <p class="tooltip-header"> Header for tooltip </p>
   <p class="tooltip-body"> Text for tooltip </p>
-  <button class="tooltip-close" (click)="dismissed = true"> Close </button>
+  <button class="tooltip-close btn btn-primary" (click)="onDismissed()"> Close </button>
 </div>
-<ng-content></ng-content>
+<!-- This shows the org element, where the tooltip attribute was called, instead of replacing it.
+TODO: Does not work for the first element where tooltip is an attribute. -->
+
+
