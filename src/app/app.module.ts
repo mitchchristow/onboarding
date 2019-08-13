@@ -15,6 +15,6 @@ import { TooltipComponent } from './tooltip/tooltip.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent, TooltipComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
